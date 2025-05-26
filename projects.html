@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kavya K. | Projects</title>
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: rgba(38, 0, 77, 0.9);
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #f7f1ff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      transition: transform 0.3s ease, background-color 0.35s ease, color 0.35s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #ff0080;
+      color: #fff;
+      transform: scale(1.05);
+      outline: none;
+      box-shadow: 0 0 15px #ff0080;
+    }
+
+    main.container {
+      max-width: 900px;
+      margin: 4rem auto 6rem;
+      padding: 2rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      color: #ffe6f0;
+      box-shadow: 0 12px 35px rgba(255, 0, 128, 0.35);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    main.container h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      text-align: center;
+      letter-spacing: 0.07em;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #ff5c8d;
+    }
+
+    #projects {
+      margin-top: 2rem;
+    }
+
+    #projects h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 8px #ff0080;
+    }
+.project-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  border: 2px solid #ff0080;
+  box-shadow: 0 4px 12px rgba(255, 0, 128, 0.2);
+}
+
+    #projects ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .project-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      background: rgba(255, 0, 128, 0.15);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(255, 0, 128, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .project-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 35px rgba(255, 0, 128, 0.6);
+    }
+
+    .project-item strong {
+      font-size: 1.3rem;
+      color: #ffffff;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #ff0080;
+    }
+
+    .meta {
+      font-weight: 600;
+      letter-spacing: 0.015em;
+    }
+
+    .role-list {
+      margin-top: 0.4rem;
+      list-style: disc inside;
+    }
+
+    footer {
+      margin-top: auto;
+      background: #320049;
+      color: #f9c2d7;
+      text-align: center;
+      padding: 1.8rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      box-shadow: inset 0 2px 8px rgba(255, 0, 128, 0.3);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      main.container {
+        margin: 3rem 1rem 5rem;
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="Primary Navigation">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="personal.html">Personal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <h1>Our Projects</h1>
+
+    <section id="projects">
+      <!-- <h2>Key Projects</h2> -->
+      <ul>
+        <li class="project-item">
+          <div class="header">
+            <img src="003_logo.jpg" alt="QDES Infotech logo" class="project-img" />
+            <strong>QDES Infotech Pvt. Ltd. – Electronic Medical Record (EMR)</strong>
+          </div>
+          <p class="meta"><em>Technologies</em>: VB.NET, ASP.NET, SQL Server 2016 | <em>Tools</em>: Visual Studio 2008, 2013 & 2015</p>
+          <p>Implemented a process for organizing, prioritizing and tracking EMR issues — including electronic billing and clinical records — and integrated systems to enable sharing of medical records with outpatient providers.</p>
+          <ul class="role-list">
+            <li>Core team member responsible for several module deliveries.</li>
+            <li>Conducted testing with real‑time data.</li>
+            <li>Generated reports using HTML print and PDF fillers.</li>
+          </ul>
+        </li>
+
+        <li class="project-item">
+          <div class="header">
+            <img src="001_logo.jpg" alt="Perfect Software Solution logo" class="project-img" />
+            <strong>Perfect Software Solution Pvt. Ltd. – ERP</strong>
+          </div>
+          <p class="meta"><em>Technologies</em>: ASP.NET MVC, SQL Server 2016 | <em>Tools</em>: Visual Studio 2019</p>
+          <p>Developed ERP modules covering accounting, procurement, project management, risk management & compliance, and supply‑chain operations.</p>
+          <ul class="role-list">
+            <li>Core team member responsible for delivering multiple modules.</li>
+            <li>Performed real‑time data testing.</li>
+          </ul>
+        </li>
+
+        <li class="project-item">
+          <div class="header">
+            <img src="002_logo.jpg" alt="Indus Motors logo" class="project-img" />
+            <strong>Indus Motors – Vehicle Tracking</strong>
+          </div>
+          <p class="meta"><em>Technologies</em>: ASP.NET, SQL Server 2016 | <em>Tools</em>: Visual Studio 2008</p>
+          <p>Built a platform to manage vehicle service‑related tasks, provide detailed service‑performance reports, and track debtor information.</p>
+          <ul class="role-list">
+            <li>Core team member overseeing specific module deliveries.</li>
+            <li>Executed testing with live data.</li>
+          </ul>
+        </li>
+
+
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025&nbsp;Kavya&nbsp;K. | Senior&nbsp;.NET Developer</p>
+  </footer>
+</body>
+
+</html>

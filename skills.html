@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kavya K. | Technical Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: rgba(38, 0, 77, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      gap: 2.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #f7f1ff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #ff0080;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 15px #ff0080;
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    main.container {
+      max-width: 900px;
+      margin: 4rem auto 6rem;
+      padding: 2rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 12px 35px rgba(255, 0, 128, 0.35);
+      color: #ffe6f0;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    main.container h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: 0.07em;
+      text-shadow: 0 0 10px #ff5c8d;
+    }
+
+    section#skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .skill-category {
+      flex: 1 1 280px;
+      background: rgba(255, 0, 128, 0.15);
+      padding: 1.6rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(255, 0, 128, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover,
+    .skill-category:focus-within {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 35px rgba(255, 0, 128, 0.6);
+      outline: none;
+    }
+
+    .skill-category h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 8px #ff0080;
+    }
+
+    .skill-category ul {
+      list-style: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #ffe6f0;
+      padding-left: 1rem;
+    }
+
+    .skill-category ul li {
+      margin-bottom: 0.65rem;
+      position: relative;
+      padding-left: 1.1rem;
+    }
+
+    .skill-category ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #ff5c8d;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    footer {
+      background: #320049;
+      color: #f9c2d7;
+      text-align: center;
+      padding: 1.8rem 1rem;
+      font-size: 0.95rem;
+      box-shadow: inset 0 2px 8px rgba(255, 0, 128, 0.3);
+      margin-top: auto;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+    }
+main.container {
+  /* Existing styles */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      main.container {
+        margin: 3rem 1rem 5rem;
+        padding: 1.5rem 1rem;
+      }
+
+      .skill-category {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html" aria-current="page">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="personal.html">Personal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container" role="main">
+    <h1>Technical Skills</h1>
+
+    <section id="skills-list" tabindex="0" aria-label="List of technical skills">
+      <article class="skill-category" tabindex="0">
+        <h2>Programming Languages</h2>
+        <ul>
+          <li>VB.Net</li>
+          <li>ASP.Net</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>jQuery</li>
+        </ul>
+      </article>
+
+      <article class="skill-category" tabindex="0">
+        <h2>Frameworks</h2>
+        <ul>
+          <li>.NET Framework 2.0+</li>
+        </ul>
+      </article>
+
+      <article class="skill-category" tabindex="0">
+        <h2>Tools</h2>
+        <ul>
+          <li>Microsoft Visual Studio (2005 to Present)</li>
+        </ul>
+      </article>
+
+      <article class="skill-category" tabindex="0">
+        <h2>Development Concepts</h2>
+        <ul>
+          <li>MVC Architecture</li>
+          <li>Object-Oriented Programming</li>
+          <li>Debugging & Optimization</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kavya K. | Senior .NET Developer</p>
+  </footer>
+</body>
+
+</html>
