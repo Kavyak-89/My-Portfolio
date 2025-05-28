@@ -136,6 +136,37 @@
       text-shadow: 0 0 8px #ff80bf;
     }
 
+    /* Styles for the resume link container */
+    .resume-container {
+      text-align: center;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    #resume-img {
+      width: 150px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    #resume-img:hover,
+    #resume-img:focus {
+      box-shadow: 0 0 25px 8px #ff3399;
+      outline: none;
+    }
+
+    .resume-text {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #ffe6f0;
+      text-shadow: 0 0 8px #ff80bf;
+      font-weight: 600;
+    }
+
     .btn {
       display: inline-block;
       padding: 0.85rem 2.5rem;
@@ -272,16 +303,16 @@
   </nav>
 
   <header class="hero" role="banner">
-    <img src="New_Profile.jpeg" alt="Portrait of Kavya K." class="avatar" tabindex="0" />
+    <img src="WhatsApp Image 2025-05-28 at 1.03.25 PM.jpeg" alt="Portrait of Kavya K." class="avatar" tabindex="0" />
     <h1>Kavya K.</h1>
     <p class="subtitle">Senior .NET Developer | VB.Net, ASP.Net, MVC | 8+ Years Experience</p>
-<div style="text-align: center;">
-  <a href="Kavya_Resume (2).pdf" download aria-label="Download Kavya K's Resume">
-    <img src="My_PDF.png" alt="Download Resume" style="width:150px; height:auto;">
-  </a>
-  <p style="margin-top: 8px; font-size: 16px; color: #333;">Click to download resume</p>
-</div>
 
+    <div class="resume-container">
+      <a href="Kavya_Resume (2).pdf" download aria-label="Download Kavya K's Resume" id="resume-link">
+        <img src="My_PDF.png" alt="Download Resume" id="resume-img" tabindex="0" />
+      </a>
+      <p class="resume-text">Click to download resume</p>
+    </div>
   </header>
 
   <main class="container fade-in-up" id="summary" role="main">
